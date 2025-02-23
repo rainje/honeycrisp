@@ -9,6 +9,7 @@ const DefaultOptions = () => {
     wrapperClass: 'default-wrapper-class',
     inputCount: 6,
     inputName: 'name',
+    inputType: 'numbers'
   }
 }
 

@@ -57,7 +57,7 @@ function buildInput(options, index, wrapper) {
 */
 function addInputListener(input, wrapper, options) {
   PasteEvent(input, wrapper)
-  BeforeInputEvent(input)
+  BeforeInputEvent(input, options)
   KeydownEvent(input)
   InputEvent(input, wrapper, options)
   ClickEvent(input)
@@ -77,12 +77,12 @@ function addHiddenInput (wrapper, options) {
 /**
  * @function buildWrapperElement
  * @param  {Object} [options]
- * Create the wrapper div and add the 
+ * Create the wrapper div and add the
  * class from the options and return the wrapper
 */
 function buildWrapperElement(options) {
   // build wrapper
-  const wrapper = document.createElement('div') 
+  const wrapper = document.createElement('div')
 
   // add class
   wrapper.classList.add(options['wrapperClass'])
